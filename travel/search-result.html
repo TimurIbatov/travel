@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - TravelBloom</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="TravelBloom Logo">
+            <span>TravelBloom</span>
+          </a>
+        </div>
+        
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        
+        <div class="search-container">
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+            <button type="submit" id="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button id="clear-search" class="clear-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="mobile-search">
+        <form id="mobile-search-form">
+          <input type="text" placeholder="Enter a destination or keyword">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero search-hero">
+      <div class="hero-overlay"></div>
+      
+      <!-- Social Media Sidebar -->
+      <div class="social-sidebar">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results">
+      <div class="container">
+        <div class="results-container" id="results-container">
+          <!-- Results will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

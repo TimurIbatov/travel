@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - TravelBloom</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="TravelBloom Logo">
+            <span>TravelBloom</span>
+          </a>
+        </div>
+        
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        
+        <div class="search-container">
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+            <button type="submit" id="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button id="clear-search" class="clear-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="mobile-search">
+        <form id="mobile-search-form">
+          <input type="text" placeholder="Enter a destination or keyword">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Hero Section -->
+    <section class="hero about-hero">
+      <div class="hero-overlay"></div>
+      
+      <!-- Social Media Sidebar -->
+      <div class="social-sidebar">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      
+      <div class="container">
+        <div class="about-content">
+          <h1>ABOUT US</h1>
+          
+          <div class="about-description">
+            <p>
+              Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to
+              <strong>provide the best experience</strong> for people traveling to different destinations around the world.
+            </p>
+            <p>
+              Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in
+              <strong>putting our customers first</strong> and
+              <strong>working together</strong> to achieve our goals.
+            </p>
+            <p>Feel free to explore our website to learn more about what we offer!</p>
+          </div>
+          
+          <h2>Our Team</h2>
+          <div class="team-container">
+            <div class="team-member">
+              <div class="member-avatar">👤</div>
+              <h3>John Doe</h3>
+              <p>John is responsible for...</p>
+              <div class="member-role">CEO</div>
+            </div>
+            
+            <div class="team-member">
+              <div class="member-avatar">👤</div>
+              <h3>Celina Thomas</h3>
+              <p>Celina Thomas is responsible for...</p>
+              <div class="member-role">Team Lead</div>
+            </div>
+            
+            <div class="team-member">
+              <div class="member-avatar">👤</div>
+              <h3>Mike Tysen</h3>
+              <p>Mike Tysen is responsible for...</p>
+              <div class="member-role">Delivery Head</div>
+            </div>
+          </div>
+          
+          <h2>Company History</h2>
+          <div class="history-section">
+            <p>
+              Founded in 2018 by avid travelers, our journey began with a vision to simplify travel planning by offering personalized recommendations tailored to individual preferences. Starting as a passion project, our commitment to curating unique travel experiences led to the official launch of our platform, driven by a team enthusiastic about exploring the world. Over the years, we've evolved into a trusted hub, leveraging cutting-edge technology and expert insights to provide tailored destination suggestions that resonate with diverse travelers.
+            </p>
+          </div>
+          
+          <h2>Our Location</h2>
+          <div class="location-container">
+            <div class="location-image">
+              <img src="images/new-york.jpg" alt="New York Office">
+            </div>
+            <div class="location-image">
+              <img src="images/toronto.jpg" alt="Toronto Office">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
